@@ -1,0 +1,1 @@
+console.log("Zit : A Git implementation in TypeScript")
