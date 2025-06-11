@@ -4,14 +4,20 @@
   "description": "",
   "main": "main.js",
   "scripts": {
-    "dev": "ts-node-dev --respawn --transpile-only src/main.ts"
+    "dev": "ts-node-dev src/main.ts"
   },
   "keywords": [],
   "author": "Iraianbu A",
   "license": "ISC",
   "type": "commonjs",
   "devDependencies": {
+    "@types/node": "^24.0.0",
     "ts-node-dev": "^2.0.0",
     "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "@types/figlet": "^1.7.0",
+    "commander": "^14.0.0",
+    "figlet": "^1.8.1"
   }
 }
