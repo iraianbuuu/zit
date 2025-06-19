@@ -1,17 +1,18 @@
 import init from "./commands/init";
 import { program } from "commander";
 import figlet from "figlet";
+import { info, success, fail, warn } from "./utils/log";
 
 console.log(figlet.textSync('Z i t'));
 
 function wrapper(cb: () => string): void {
     try {
         const result = cb();
-        console.log(result);
+        success(result);
         process.exit(0);
     } catch (error) {
         const err = error as Error;
-        console.error(err);
+        fail(err.message);
         process.exit(1);
     }
 }
